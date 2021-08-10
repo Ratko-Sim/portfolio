@@ -1,0 +1,77 @@
+.About {
+  padding: 4rem;
+  height: 100vh;
+  box-shadow: inset -2px -2px 5px #191a29,
+  inset 3px 3px 5px rgba(0, 0, 0, 0.1);
+
+  .About__top-cont {
+    text-align: center;
+    h1 {
+      font-size: 3rem;
+      text-transform: capitalize;
+      margin: 1.5rem;
+    }
+    p {
+      max-width: 25rem;
+      margin: auto;
+      font-size: .9rem;
+    }
+
+  }
+
+  .About__bottom-cont{
+    display: flex;
+    margin-top: 5rem;
+    justify-content: space-between;
+    align-items: center;
+
+    .Bottom-cont__left {
+      .Left__img-cont {
+        height: 20rem;
+        width: 25rem;
+        border-radius: .5rem;
+        background: url("../Home/maja.jpg");
+        background-size: cover;
+      }
+    }
+
+    .Bottom-cont__right {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 18rem;
+      width: 50%;
+
+
+      h2 {
+        margin-bottom: 1.5rem;
+      }
+
+      .Right__info {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        ul {
+          padding: 0;
+          list-style-type: none;
+        }
+      }
+
+      .Right__buttons {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        button {
+          margin-top: 2rem;
+          margin-right: 1rem;
+          width: 8rem;
+          height: 2rem;
+          font-size: .8rem;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
