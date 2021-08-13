@@ -1,14 +1,22 @@
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background: #000000de;
+
 }
 
 .Main {
   display: flex;
   align-items: center;
-  background: #2b2d42;
+  background: #2b2b2bde;
   color: #e5e5e5;
   overflow: hidden;
+  max-width: 1300px;
+  margin: auto;
 
   .Main__sidebar {
     height: 100vh;

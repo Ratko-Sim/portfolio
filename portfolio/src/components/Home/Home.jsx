@@ -22,32 +22,32 @@ function Home() {
             <ul className="Left-cont__links">
               <li className="Links__item">
                 <a href="#">
-                  <i class="fa fa-linkedin"></i>
+                  <i className="fa fa-linkedin"></i>
                 </a>
               </li>
               <li className="Links__item">
                 <a href="#">
-                  <i class="fa fa-github"></i>
+                  <i className="fa fa-github"></i>
                 </a>
               </li>
               <li className="Links__item">
                 <a href="#">
-                  <i class="fa fa-envelope"></i>
+                  <i className="fa fa-envelope"></i>
                 </a>
               </li>
               <li className="Links__item">
                 <a href="#">
-                  <i class="fa fa-telegram"></i>
+                  <i className="fa fa-telegram"></i>
                 </a>
               </li>
               <li className="Links__item">
                 <a href="#">
-                  <i class="fa fa-twitter"></i>
+                  <i className="fa fa-twitter"></i>
                 </a>
               </li>
               <li className="Links__item">
                 <a href="#">
-                  <i class="fa fa-instagram"></i>
+                  <i className="fa fa-instagram"></i>
                 </a>
               </li>
 
