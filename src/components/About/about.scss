@@ -1,8 +1,9 @@
 .About {
-  padding: 4rem;
-  height: 100vh;
-  box-shadow: inset -2px -2px 5px #191a29,
-  inset 3px 3px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
 
   .About__top-cont {
     text-align: center;
@@ -14,24 +15,26 @@
     p {
       max-width: 25rem;
       margin: auto;
-      font-size: .9rem;
+      font-size: 0.9rem;
     }
-
   }
 
-  .About__bottom-cont{
+  .About__bottom-cont {
     display: flex;
     margin-top: 5rem;
     justify-content: space-between;
     align-items: center;
 
     .Bottom-cont__left {
+      margin-right: 1rem;
+
       .Left__img-cont {
-        height: 20rem;
-        width: 25rem;
-        border-radius: .5rem;
-        background: url("../Home/nathan-dumlao-wwdEwyiQWKI-unsplash.jpg");
+        height: 30rem;
+        width: 28rem;
+        border-radius: 0.5rem;
+        background: url('../../images/ratko.jpeg');
         background-size: cover;
+        background-position: center;
       }
     }
 
@@ -40,8 +43,7 @@
       flex-direction: column;
       justify-content: space-between;
       height: 18rem;
-      width: 50%;
-
+      width: 30rem;
 
       h2 {
         margin-bottom: 1.5rem;
@@ -49,12 +51,13 @@
 
       .Right__info {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
-
         ul {
-          padding: 0;
           list-style-type: none;
+        }
+
+        .info__left {
         }
       }
 
@@ -66,10 +69,19 @@
         button {
           margin-top: 2rem;
           margin-right: 1rem;
-          width: 8rem;
-          height: 2rem;
-          font-size: .8rem;
+          background-color: #ed6363;
+          box-shadow: -2px -2px 5px #3131318c, 3px 3px 5px rgba(0, 0, 0, 0.493);
+          color: white;
+          font-weight: 500;
+          text-decoration: none;
+          padding: 0.4rem;
+          width: 7rem;
+          text-align: center;
+          border-radius: 0.2rem;
           text-transform: uppercase;
+          font-size: 0.8rem;
+          font-weight: 500;
+          border: none;
         }
       }
     }

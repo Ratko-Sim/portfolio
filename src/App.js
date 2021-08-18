@@ -24,7 +24,6 @@ function App() {
               <Route path="/resume" exact component={Resume} />
               <Route path="/contact" exact component={Contact} />
               <Route path="/thank-you" exact component={FormSubmittedMessage} />
-
             </Switch>
           </div>
         </main>
