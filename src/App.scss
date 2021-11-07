@@ -5,31 +5,43 @@
 }
 
 body {
-  background: #f4f4f4;
-  font-family: 'Montserrat', sans-serif;
-  overflow-y: scroll;
+  background: var(--background-color);
+  font-family: var(--general-font);
+  color: var(--text-color-primary);
+  overflow: hidden;
+  margin: .5rem 0 3rem 0;
 }
 
 .Main {
   display: flex;
   align-items: center;
-  color: #000000;
-  overflow: hidden;
+  flex-direction: column;
   max-width: 1300px;
   margin: auto;
+  height: 97vh;
 
-  .Main__sidebar {
-    height: 100vh;
+
+  .Main__navBar {
     display: flex;
     align-items: center;
+    justify-content: center;
+    width: 24rem;
+    height: 5.5rem;
+    @media only screen and (max-width: 400px) {
+      height: 4.4rem;
+    }
   }
 
   .Main__content {
-    height: 95vh;
-    width: 100%;
-    max-width: 1300px;
+    overflow-y: auto;
+    width: 90%;
+    height: 100%;
     margin: auto;
-    background-color: #f4f4f4;
-    overflow-y: scroll;
+    background: var(--background-color-content);
+    border-radius: var(--border-radius-general);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 8px 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }

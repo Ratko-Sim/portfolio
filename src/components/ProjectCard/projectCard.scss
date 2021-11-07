@@ -1,14 +1,147 @@
+@use '../../Styles.scss';
+
 .Project__Card {
-  width: 90%;
-  padding: 0.5rem;
+  width: 45%;
   margin: 1rem auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 0.3rem;
-  box-shadow: -2px -2px 6px rgba(255, 255, 255, 0.6),
-    -2px -2px 4px rgba(255, 255, 255, 0.4),
-    2px 2px 2px rgba(255, 255, 255, 0.05), 2px 2px 4px rgba(0, 0, 0, 0.1);
-  background-color: #ffffff;
-  min-height: 15rem;
+  border-radius: var(--border-radius-general);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  overflow: hidden;
+  transition: var(--transition-slower);
+  position: relative;
+  background: var(--background-color-content-secondary);
+  min-height: 19rem;
+  @media only screen and (max-width: 900px) {
+    width: 80%;
+  }
+  @media only screen and (max-width: 550px) {
+    width: 95%;
+    min-height: 16rem;
+
+  }
+ 
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    & > .Card__Body {
+      transform: translateY(0%);
+      background: var(--background-color-content-secondary);
+    }
+    & > .Card__Body .Card__Data h3 {
+      background-color: transparent;
+    }
+    & > .Card__Body .Card__Data h3::after {
+      width: 100%;
+      left: 0;
+    }
+  }
+
+  .Card__Background {
+    height: 100%;
+    width: 96%;
+    position: absolute;
+    top: 0.5rem;
+    left: 50%;
+    height: 85%;
+    transform: translate(-50%);
+
+    img {
+      border-radius: var(--border-radius-general);
+      object-fit: cover;
+      object-position: center;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .Card__Body {
+    transition: var(--transition-slower);
+    transform: translateY(80%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: var(--border-radius-general);
+    padding: 2rem 0;
+    height: 100%;
+    @media only screen and (max-width: 550px) {
+      transform: translateY(78%);
+    }
+  }
+
+  .Card__Data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+
+    h3 {
+      position: relative;
+      width: 80%;
+      text-align: center;
+      transition: var(--transition-slower);
+
+      @media only screen and (max-width: 550px) {
+        font-size: 1rem;
+      }
+      @media only screen and (max-width: 350px) {
+        font-size: 0.9rem;
+      }
+
+      &::after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: -0.25rem;
+        content: '';
+        display: block;
+        height: 0.1rem;
+        left: 0%;
+        position: absolute;
+        background: var(--details-primary);
+        transition: width 0.7s ease 0s, left 0.7s ease 0s;
+        transition-delay: 0.2s;
+        width: 0;
+      }
+    }
+
+    span {
+      font-weight: 500;
+      text-align: center;
+      margin: .8rem 0;
+
+      @media only screen and (max-width: 450px) {
+        font-size: 0.8rem;
+      }
+    }
+
+    p {
+      text-align: center;
+      font-weight: 300;
+      font-size: 0.85rem;
+      letter-spacing: 0.02rem;
+
+      margin-bottom: 1rem;
+      @media only screen and (max-width: 450px) {
+        font-size: 0.7rem;
+      }
+    
+    }
+  }
+
+  .Card__Link {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 18rem;
+    align-items: center;
+
+    button {
+      @include Styles.btn-background;
+      width: 7rem;
+      height: 2.2rem;
+      @media only screen and (max-width: 400px) {
+        font-size: 0.8rem;
+        width: 6rem;
+        height: 1.7rem;
+      }
+    }
+  }
 }

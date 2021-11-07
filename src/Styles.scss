@@ -1,0 +1,106 @@
+// === Default ===
+
+$general-font: 'Montserrat', sans-serif;
+$text-color-primary: rgb(247, 247, 247);
+$details-primary: rgb(127, 171, 247);
+$background-color: rgb(23, 23, 23);
+$background-color-content: rgb(30, 30, 33);
+$background-color-content-secondary: rgb(42, 43, 46);
+$transition: 0.3s ease-in-out;
+$transition-slower: 0.5s ease-in-out;
+$transition-button: 0.8s all ease-in-out;
+$border-radius-btn: 0.2rem;
+$border-radius-general: 0.4rem;
+
+// === Root Colours, Font Variables etc. ===
+
+:root {
+  --general-font: #{$general-font};
+  --text-color-primary: #{$text-color-primary};
+  --details-primary: #{$details-primary};
+  --background-color: #{$background-color};
+  --background-color-content: #{$background-color-content};
+  --background-color-content-secondary: #{$background-color-content-secondary};
+  --transition: #{$transition};
+  --transition-slower: #{$transition-slower};
+  --transition-button: #{$transition-button};
+  --border-radius-btn: #{$border-radius-btn};
+  --border-radius-general: #{$border-radius-general};
+}
+
+// === Mixins for styling ===
+
+@mixin navLink-background {
+  letter-spacing: 0.03rem;
+  border: none;
+  cursor: pointer;
+  color: var(--text-color-primary);
+  transition: var(--transition);
+  text-align: center;
+  background: var(--background-color-content);
+  border-radius: var(--border-radius-general);
+  text-decoration: none;
+  height: 4rem;
+  width: 6rem;
+  font-weight: 600;
+  text-transform: capitalize;
+
+  &:active {
+    background: rgb(42, 43, 46);
+  }
+}
+
+@mixin btn-background {
+  display: flex;
+  height: 2.5rem;
+  width: 9rem;
+  border: 0.05rem solid var(--details-primary);
+  color: var(--text-color-primary);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1rem;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: transparent;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: var(--border-radius-btn);
+  font-family: var(--general-font);
+
+  .animation {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    left: 4.375rem;
+    top: 1.25rem;
+    transform: rotate(0deg);
+    background: none;
+    position: absolute;
+    transition: var(--transition-button);
+  }
+
+  .title {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 0.05rem;
+    position: relative;
+    transition: var(--transition-slower);
+    font-weight: 600;
+  }
+
+  &:hover .animation {
+    width: 200%;
+    height: 500%;
+    opacity: 1;
+    left: -4.375rem;
+    top: -4.375rem;
+    background: var(--details-primary);
+    transform: rotate(80deg);
+  }
+
+  &:hover .title {
+    color: black;
+  }
+}

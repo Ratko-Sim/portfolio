@@ -9,25 +9,14 @@ function Nav() {
         <li className="Nav__link">
           <NavLink activeClassName='Active-page' exact to='/'>
             <i className="fa fa-home"></i>
-            <span className="Link__icon">home</span>
-          </NavLink>
-        </li>
-        <li className="Nav__link">
-          <NavLink activeClassName='Active-page' exact to='/about'>
-            <i className="fa fa-user"></i>
             <span className="Link__icon">about</span>
           </NavLink>
         </li>
+
         <li className="Nav__link">
           <NavLink activeClassName='Active-page' exact to='/projects'>
             <i className="fa fa-briefcase"></i>
             <span className="Link__icon">projects</span>
-          </NavLink>
-        </li>
-        <li className="Nav__link">
-          <NavLink activeClassName='Active-page' exact to='/resume'>
-            <i className="fa fa-file-text"></i>
-            <span className="Link__icon">resume</span>
           </NavLink>
         </li>
         <li className="Nav__link">

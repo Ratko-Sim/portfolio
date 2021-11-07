@@ -1,0 +1,32 @@
+.Projects {
+  margin-top: 3rem;
+
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin: 0 auto;
+    margin-bottom: 5%;
+    position: relative;
+    transition: 0.4s ease;
+    margin-top: -0.5rem;
+
+    &::after {
+      bottom: -0.2rem;
+      content: '';
+      height: 0.1rem;
+      right: 50%;
+      transform: translate(50%);
+      position: absolute;
+      background: var(--details-primary);
+      width: 6rem;
+    }
+  }
+  .Projects__Cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+  }
+}
