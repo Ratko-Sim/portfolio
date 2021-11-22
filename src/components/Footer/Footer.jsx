@@ -1,5 +1,8 @@
 import React from 'react'
 import "./footer.scss"
+import { AiFillGithub } from "react-icons/ai"
+import { HiMail } from "react-icons/hi"
+import { FaTelegramPlane, FaLinkedinIn } from "react-icons/fa"
 
 const Footer = () => {
   return (
@@ -7,25 +10,25 @@ const Footer = () => {
       <ul className="Footer__links">
         <li className="Links__item">
           <a href="https://www.linkedin.com/in/ratkosimidzija/" >
-            <i className="fa fa-linkedin"></i>
+            <FaLinkedinIn />
             <span>linkedin</span>
           </a>
         </li>
         <li className="Links__item">
           <a href="https://github.com/Ratko-Sim" >
-            <i className="fa fa-github"></i>
+            <AiFillGithub />
             <span>gitHub</span>
           </a>
         </li>
         <li className="Links__item">
           <a href="mailto:ratko.simidzija@icloud.com">
-            <i className="fa fa-envelope"></i>
+            <HiMail />
             <span>mail</span>
           </a>
         </li>
         <li className="Links__item">
           <a href="https://t.me/sira_08" >
-            <i className="fa fa-telegram"></i>
+            <FaTelegramPlane />
             <span>telegram</span>
           </a>
         </li>

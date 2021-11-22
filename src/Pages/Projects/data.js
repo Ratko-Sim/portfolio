@@ -1,8 +1,8 @@
-import alpaca from "../../images/projectAlpaca.png";
-import ecommerce from "../../images/ecomArhera.png";
-import pokemon from "../../images/pokemonGame.png";
-import portfolio from "../../images/portfolio.png";
-import freebie from "../../images/freebie.png";
+import alpaca from "../../images/alpaca-farm.webp";
+import ecommerce from "../../images/ecommerce.webp";
+import pokemon from "../../images/pokemon.webp";
+import portfolio from "../../images/portfolio.webp";
+import freebie from "../../images/freebie.webp";
 
 const data = [
   {
@@ -43,7 +43,7 @@ const data = [
     languages: "Sass - Reactjs - npm",
     info: "An application style portfolio page displaying my individual and group projects.",
     code: "https://github.com/Ratko-Sim/portfolio",
-    demo: "https://ratko-simidzija.com",
+    demo: "https://www.ratko-simidzija.com",
   },
 ];
 

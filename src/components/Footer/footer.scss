@@ -29,8 +29,17 @@
         align-items: center;
         justify-content: center;
       }
+      
+      a {
+        font-size: 2rem;
+        color: var(--text-color-primary);
+        transition: var(--transition);
+        @media only screen and (max-width: 460px) {
+          font-size: 1.5rem;
+        }
 
       span {
+        margin-top: .1rem;
         font-size: 0.7rem;
         display: block;
         color: var(--text-color-primary);
@@ -40,15 +49,6 @@
           font-size: 0.5rem;
         }
       }
-
-      i {
-        font-size: 2rem;
-        color: var(--text-color-primary);
-        margin-bottom: 0.2rem;
-        transition: var(--transition);
-        @media only screen and (max-width: 460px) {
-          font-size: 1.5rem;
-        }
       }
     }
   }
